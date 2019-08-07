@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Área Restrita</h1>
+        <hr>
+<!--
+action:         Para onde o formulario será enviado. Ex: cadastro.php
+&nbsp;:         Dá um espaço 
+name:           Trocar entre arquivos dessas informações
+id:             Identificar o elemento na troca de informação
+maxlength:      Define tamanho máximo de caracteres que serão digitados
+size:           Define fisicamente o tamanho da caixa de texto
+placeholder:    Texto que ficará dentro da caixa de texto para ajudar o usuário
+method="post":  Informações irão implícitas
+
+metodo get: carinha da pizza
+metodo post: carinha que liga pedindo a pizza
+-->
+            <form name="form_login" action="inicial.html" method="post">
+                <label for="usuario" title="Label do usuário">Usuário:</label> <br>          
+                <input name="usuario" id="usuario" maxlength="50" size="15" placeholder="Nome de usuário ou e-mail">  
+                <br><br>
+                
+                <label for="senha">Senha:</label> <br>      
+                <input name="senha" id="senha" type="password" maxlength="10" size="15">    
+                <br><br>
+                
+                <button>Entrar</button>
+            </form>
+        <hr>
+    </body>
+</html>
