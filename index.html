@@ -5,9 +5,8 @@
         <title>Login</title>
         <meta charset="utf-8">
     </head>
-    <body>
-        <h1>Área Restrita</h1>
-        <hr>
+    <body style="background-color:#a0c7e8c7">
+        <h1 style="color:#130567; border-bottom: 3px solid black; width:960px; text-align: center; margin-left: auto;margin-right: auto;">Área Restrita</h1>
 <!--
 action:         Para onde o formulario será enviado. Ex: cadastro.php
 &nbsp;:         Dá um espaço 
@@ -21,17 +20,16 @@ method="post":  Informações irão implícitas
 metodo get: carinha da pizza
 metodo post: carinha que liga pedindo a pizza
 -->
-            <form name="form_login" action="inicial.html" method="post">
-                <label for="usuario" title="Label do usuário">Usuário:</label> <br>          
-                <input name="usuario" id="usuario" maxlength="50" size="15" placeholder="Nome de usuário ou e-mail">  
+            <form name="form_login" action="inicial.html" method="post" style="color:#130567; border: 3px double #130567; width:500px; margin-left: auto;margin-right: auto; padding: 50px">
+                <label for="usuario" title="Label do usuário" style="font-weight: bold; display: inline-block; width: 100px; padding: 10px;">Usuário:</label>           
+                <input name="usuario" id="usuario" maxlength="50" size="15" placeholder="Nome de usuário ou e-mail" style="padding: 10px; font-size: 14px; display: inline-block">  
                 <br><br>
                 
-                <label for="senha">Senha:</label> <br>      
-                <input name="senha" id="senha" type="password" maxlength="10" size="15">    
+                <label for="senha" style="font-weight: bold; padding: 10px; display: inline-block; width: 100px">Senha:</label>      
+                <input name="senha" id="senha" type="password" maxlength="10" size="15" style="padding: 10px; font-size: 14px; display: inline-block">    
                 <br><br>
                 
-                <button>Entrar</button>
+                <button style="font-weight: bold; width: 70%; padding: 10px; font-size: 14px; border: 2px solid #a0c7e8c7; background-color:#130567; color:white; margin-left: auto;margin-right: auto;">Entrar</button>
             </form>
-        <hr>
     </body>
 </html>
