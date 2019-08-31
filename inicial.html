@@ -4,13 +4,13 @@
         <title>Painel de controle</title>
         <meta charset="utf-8">
     </head>
-    <body>
-        <header>
+    <body style="background-color:#a0c7e8c7">
+        <header style="text-align: right;">
             Usuário logado: Mari
             <a href="index.html">Sair</a>
         </header>
-        <main>
-            <h3>Escolha uma opção</h3>
+        <main style="color:#130567;">
+            <h2 style="color:#130567; border-bottom: 3px solid #130567; width:960px; text-align: center; margin-left: auto;margin-right: auto;">Menu inicial</h2>
             <ul>
                 <li><a href="cadastro-usuario.html">Cadastrar um usuário</a></li>
                 <li><a href="ajuda.html">Solicitar ajuda</a></li>
@@ -18,8 +18,51 @@
                 <li><a href="ser-voluntario.html">Quero ser voluntário</a></li>
                 <li><a href="ocorrencias.html">Ocorrências</a></li>
             </ul>
+            <div style="display: flex; justify-content: space-around;">
+                <button onclick="location.href='cadastro-usuario.html'" id="btnCadastrarUsuario" style="background-color:#a0c7e8c7 ; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #130567; color:white; height: 120px; width: 120px; border-radius: 10px">
+                    <div>
+                        <img src="Imagens/adicionar-usuario.png">
+                    </div>
+                    <div>
+                        <label>Cadastrar um usuário</label>
+                    </div>
+                </button>  
+                <button onclick="location.href='ajuda.html'" id="btnSolicitarAjuda" style="background-color:#a0c7e8c7 ; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #130567; color:white; height: 120px; width: 120px; border-radius: 10px">
+                    <div>
+                        <img src="Imagens/alarme.png">
+                    </div>
+                    <div>
+                        <label>Solicitar ajuda</label>
+                    </div>
+                </button> 
+                <button onclick="location.href='aprovar-usuario.html'" id="btnAprovarUsuario" style="background-color:#a0c7e8c7 ; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #130567; color:white; height: 120px; width: 120px; border-radius: 10px">
+                    <div>
+                        <img src="Imagens/verificado.png">
+                    </div>
+                    <div>
+                        <label>Aprovar novo usuário</label>
+                    </div>
+                </button>  
+                <button onclick="location.href='ser-voluntario.html'" id="btnVoluntario" style="background-color:#a0c7e8c7 ; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #130567; color:white; height: 120px; width: 120px; border-radius: 10px">
+                    <div>
+                        <img src="Imagens/voluntario.png">
+                    </div>
+                    <div>
+                        <label>Quero ser voluntário</label>
+                    </div>
+                </button>  
+                <button onclick="location.href='ocorrencias.html'" id="btnOcorrencia" style="background-color:#a0c7e8c7 ; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #130567; color:white; height: 120px; width: 120px; border-radius: 10px">
+                    <div>
+                        <img src="Imagens/ligacao-de-emergencia.png">
+                    </div>
+                    <div>
+                        <label>Ocorrências</label>
+                    </div>
+                </button>  
+            </div>
+            
         </main>
-        <footer>
+        <footer style="color:#130567;">
             <em>&copy; 2019 - Mari Sistemas</em>
         </footer>
     </body>
