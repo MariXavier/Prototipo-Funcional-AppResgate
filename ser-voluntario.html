@@ -4,30 +4,34 @@
         <title>Ser Voluntário</title>
         <meta charset="utf-8">
     </head>
-    <body>
-        <header>
-            <h1>Ser voluntário</h1>
+    <body style="background-color:#a0c7e8c7">
+        <header style="text-align: right;">
             Usuário logado: Mari
-            <a href="inicial.html">Voltar</a>
+            <a href="inicial.html">Sair</a>
         </header>
-        <main>
+        <main style="color:#130567;">
+            <h1 style="color:#130567; border-bottom: 3px solid #130567; width:960px; text-align: center; margin-left: auto;margin-right: auto;">Ser voluntário</h1>
             <form action="cadastrar-voluntario.html">
-                <label for="nome">Nome:</label>
-                <input name="name" id="name" required>  <br>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="nome">Nome:</label>
+                    <input name="name" id="name" required style="margin-bottom: 5px;"> 
+    
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" style="margin-bottom: 5px;">         
+    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" style="margin-bottom: 5px;">     
+    
+                    <label for="for">Foto:</label>
+                    <input type="file" name="foto" id="foto">    
+                </div>
+                
 
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email">         <br>
+                <button onclick="location.href='telaCadastroSucesso.html'" id="btnSalvar" style="background-color:#130567; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #a0c7e8c7; color:white;">Salvar</button>    
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone" id="telefone">     <br>
-
-                <label for="for">Foto:</label>
-                <input type="file" name="foto" id="foto">     <br>
-
-                <button onclick="location.href='telaCadastroSucesso.html'" id="btnSalvar">Salvar</button>
             </form>
         </main>
-        <footer>
+        <footer style="color:#130567; position: fixed; bottom: 0; border-top: 2px solid #130567; width: 100%;">
             <em>&copy; 2019 - Mari Sistemas</em>
         </footer>
     </body>
