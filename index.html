@@ -3,10 +3,86 @@
 <html>
     <head>
         <title>Login</title>
+        <style>
+            * 
+            {
+                margin: 0;
+                padding: 0;
+            }
+
+            body
+            {
+                background-image: url('Imagens/cidade-2.jpg'); 
+                background-size: cover;
+                height: 100%;
+                width: 100%; 
+            }
+
+            .formulario
+            {
+                color:#130567; 
+                border: 3px double #130567; 
+                width:300px; 
+                margin-left: auto;
+                margin-right: auto; 
+                padding: 50px;
+                background-color: wheat;
+                text-align: center;
+            }
+
+            .formulario-label
+            {
+                font-weight: bold; 
+                display: inline-block; 
+                width: 100px; 
+            }
+
+            .formulario-input
+            {
+                padding: 5px; 
+                font-size: 14px; 
+                display: inline-block;
+            }
+
+            .formulario-botao
+            {
+                font-weight: bold; 
+                width: 50%; 
+                padding: 10px; 
+                font-size: 14px; 
+                border: 2px solid #a0c7e8c7; 
+                background-color:#130567; 
+                color:white; 
+                margin-left: auto;
+                margin-right: auto; 
+            }
+
+            .painel-central
+            {
+                margin: 100px auto;
+            }
+
+        </style>
         <meta charset="utf-8">
     </head>
-    <body style="background-color:#a0c7e8c7">
-        <h1 style="color:#130567; border-bottom: 3px solid black; width:960px; text-align: center; margin-left: auto;margin-right: auto;">Área Restrita</h1>
+    <body>
+        <div class='painel-central'>
+            <form name="form_login" action="inicial.html" method="post" class="formulario">
+            <label for="usuario" class="formulario-label" title="Label do usuário">Usuário:</label>           
+            <input name="usuario" class="formulario-input" id="usuario" maxlength="50" size="15" placeholder="Nome de usuário ou e-mail" >  
+            <br><br>
+            
+            <label for="senha" class="formulario-label">Senha:</label>      
+            <input name="senha" id="senha" type="password" maxlength="10" size="15" class="formulario-input">    
+            <br><br>
+            
+            <button class="formulario-botao">Entrar</button>
+            </form>
+        </div>
+    </body>
+</html>
+
+
 <!--
 action:         Para onde o formulario será enviado. Ex: cadastro.php
 &nbsp;:         Dá um espaço 
@@ -20,16 +96,3 @@ method="post":  Informações irão implícitas
 metodo get: carinha da pizza
 metodo post: carinha que liga pedindo a pizza
 -->
-            <form name="form_login" action="inicial.html" method="post" style="color:#130567; border: 3px double #130567; width:500px; margin-left: auto;margin-right: auto; padding: 50px">
-                <label for="usuario" title="Label do usuário" style="font-weight: bold; display: inline-block; width: 100px; padding: 10px;">Usuário:</label>           
-                <input name="usuario" id="usuario" maxlength="50" size="15" placeholder="Nome de usuário ou e-mail" style="padding: 10px; font-size: 14px; display: inline-block">  
-                <br><br>
-                
-                <label for="senha" style="font-weight: bold; padding: 10px; display: inline-block; width: 100px">Senha:</label>      
-                <input name="senha" id="senha" type="password" maxlength="10" size="15" style="padding: 10px; font-size: 14px; display: inline-block">    
-                <br><br>
-                
-                <button style="font-weight: bold; width: 70%; padding: 10px; font-size: 14px; border: 2px solid #a0c7e8c7; background-color:#130567; color:white; margin-left: auto;margin-right: auto;">Entrar</button>
-            </form>
-    </body>
-</html>
