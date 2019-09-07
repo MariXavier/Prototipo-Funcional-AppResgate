@@ -4,36 +4,39 @@
     <head>
         <meta charset='utf-8'>
         <title>Triagem</title>
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
-    <body style="background-color:#a0c7e8c7">
-        <header>
-
-        </header>
-        <main style="color:#130567;">
-            <form action="iniciar-ocorrencia.html" method="POST">
-                <strong>A vítima está acordada?</strong>                                <br>
-                <input type="radio" name="acordado" value="sim"> Sim                    <br>
-                <input type="radio", name="acordado" value="nao"> Não                   <br>
-                <br>
-                <strong>A vítima bateu a cabeça?</strong>                               <br>
-                <input type="radio" name="cabeca" value="sim"> Sim                      <br>
-                <input type="radio", name="cabeca" value="nao"> Não                     <br>
-                <br>
-                <strong>A vítima está respondendo?</strong>                             <br>
-                <input type="radio" name="respondendo" value="sim"> Sim                 <br>
-                <input type="radio", name="respondendo" value="nao"> Não                <br>
-                <br>
-                <strong>Há quanto tempo aproximadamente ocorreu o acidente?</strong>    <br>
-                <input type="radio" name="tempo" value="10"> Até 10 min                 <br>
-                <input type="radio" name="tempo" value="20"> Até 20 min                 <br>
-                <input type="radio" name="tempo" value="30+"> Mais de 30 min            <br>
-                <input type="radio" name="tempo" value="naoSei"> Não sei                <br>
-                <br>
-                <button style="background-color:#130567; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #a0c7e8c7; color:white;">Enviar</button>
+    <body class="body-central">
+        <main class="main-central">
+            <form action="iniciar-ocorrencia.html" method="POST" class="formulario-triagem">
+            <div class="linha-laranja"></div>
+                <div class="componente-radio">
+                    <label>A vítima está acordada?</label>                                 
+                    <input type="radio" name="acordado" value="sim"> Sim    <br>                
+                    <input type="radio", name="acordado" value="nao"> Não     <br>                
+                </div>
+                <div class="componente-radio">
+                    <label>A vítima bateu a cabeça?</label>                               
+                    <input type="radio" name="cabeca" value="sim"> Sim     <br>                   
+                    <input type="radio", name="cabeca" value="nao"> Não     <br>                  
+                </div>
+                <div class="componente-radio">
+                    <label>A vítima está respondendo?</label>                             
+                    <input type="radio" name="respondendo" value="sim"> Sim    <br>               
+                    <input type="radio", name="respondendo" value="nao"> Não   <br>               
+                </div>
+                <div class="componente-radio">
+                    <label>Há quanto tempo aproximadamente ocorreu o acidente?</label>    
+                    <input type="radio" name="tempo" value="10"> Até 10 min             <br>      
+                    <input type="radio" name="tempo" value="20"> Até 20 min             <br>      
+                    <input type="radio" name="tempo" value="30+"> Mais de 30 min        <br>      
+                    <input type="radio" name="tempo" value="naoSei"> Não sei            <br>      
+                </div>
+                <button class="formulario-botao">Enviar</button>
             </form>
         </main>
         <footer>
-
+            <em>&copy; 2019 - Mari Sistemas</em>
         </footer>
     </body>
 </html>

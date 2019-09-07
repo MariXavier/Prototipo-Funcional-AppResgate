@@ -4,12 +4,67 @@
     <head>
         <title>Login</title>
         <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
-    <body style="background-color:#a0c7e8c7">
-        <h1 style="color:#130567; border-bottom: 3px solid #130567; width:960px; text-align: center; margin-left: auto;margin-right: auto;">Cadastro de usuário</h1>
+    <body>
+        <h1 class="titulo-inicial">Cadastro de usuário</h1>
         <form name="formCadastroUsuario" action="" method="post">
-            
-            <fieldset style="display: flex; border-radius: 5px; margin:20px; flex-direction: column; color:#130567; border-color: #13056712; box-shadow: 2px 6px 10px #6f90acf0; padding: 10px 20px 15px 20px;">
+            <div class="info-cadastro-container">
+                <div>
+                    <label>Informações Pessoais</label>
+                </div>
+                <div class="componente">
+                    <label for="nome">Nome:</label>
+                    <input name="nome" id="nome" required>
+                </div>
+                <div class="componente">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input name="sobrenome" id="sobrenome" required>
+                </div>
+                <div class="componente">
+                    <label for="email">E-mail:</label>
+                    <input name="email" id="email" type="email">
+                </div>
+            </div>
+            <div class="info-cadastro-container">
+                <div>
+                    <label>Informações do usuário</label>
+                </div>
+                <div class="componente">
+                    <label for="usuario">Usuário:</label>
+                    <input name="usuario" id="usuario" required>
+                </div>
+                <div class="componente">
+                    <label for="senha">Senha:</label>
+                    <input name="senha" id="senha" type="password" maxlength="10" required>
+                </div>
+                <div class="componente">
+                    <label for="confirmacaoSenha">Confirmação de senha:</label>
+                    <input name="confirmacaoSenha" id="confirmacaoSenha" type="password" maxlength="10" required>
+                </div>
+                <div class="componente">
+                    <label for="dicaSenha">Dica de senha:</label>
+                    <input name="dicaSenha" id="dicaSenha">
+                </div>
+            </div>
+            <div class="info-cadastro-container">
+                <div>
+                    <label>Redes Sociais</label>
+                </div>
+                <div class="rede-social">
+                    <img src="Imagens/linkedin.png">&ensp;<i><label for="linkedin">linkedin.com/in/</label></i>
+                    <input name="linkedin" id="linkedin">
+                </div>
+                <div class="rede-social">
+                    <img src="Imagens/facebook.png">&ensp;<i><label for="facebook">facebook.com/ </label></i>
+                    <input name="facebook" id="facebook">
+                </div class="rede-social">
+                <div>
+                    <img src="Imagens/instagram.png">&ensp;<i><label for="instagram">instagram.com/</label></i>
+                    <input name="instagram" id="instagram"> 
+                </div>
+            </div>
+            <!-- <fieldset style="display: flex; border-radius: 5px; margin:20px; flex-direction: column; color:#130567; border-color: #13056712; box-shadow: 2px 6px 10px #6f90acf0; padding: 10px 20px 15px 20px;">
                 <legend><strong>Informações Pessoais</strong></legend>
                 <label for="nome">Nome:</label>
                 <input name="nome" id="nome" required style="box-shadow:inset 0 0 5px 5px #888; margin-bottom: 5px;">
@@ -19,7 +74,6 @@
                 
                 <label for="email">E-mail:</label>
                 <input name="email" id="email" type="email" style="margin-bottom: 5px;">
-
             </fieldset>
             <fieldset style="display: flex; border-radius: 5px; margin:20px; flex-direction: column; color:#130567; border-color: #13056712; box-shadow: 2px 6px 10px #6f90acf0; padding: 10px 20px 15px 20px;">
                 <legend><strong>Informações do Usuário</strong></legend>
@@ -37,7 +91,7 @@
                 <input name="dicaSenha" id="dicaSenha" style="margin-bottom: 5px;">
 
             </fieldset>
-            <fieldset style="display: flex; border-radius: 5px; margin:20px; flex-direction:column; color:#130567; border-color: #13056712; box-shadow: 2px 6px 10px #6f90acf0; padding: 10px 20px 15px 20px;">
+            <fieldset style="display: flex; border-radius: 5px; margin:20px; flex-direction:column; background-color:white; border-color: #13056712;; padding: 10px 20px 15px 20px;">
                 <legend><strong>Redes Sociais</strong></legend>
                 <div class="rede-social">
                     <img src="Imagens/linkedin.png">&ensp;<i><label for="linkedin">linkedin.com/in/</label></i>
@@ -66,11 +120,10 @@
                         <option>Sim</option>
                         <option>Com certeza</option>
                     </select>
-            </fieldset>
-            <button onclick="location.href='inicial.html'" id="btnVoltar" style="background-color:#130567; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #a0c7e8c7; color:white;">Voltar</button>    
-            <button onclick="location.href='telaCadastroSucesso.html'" id="btnSalvar" style="background-color:#130567; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #a0c7e8c7; color:white;">Salvar</button>    
+            </fieldset> -->
+            <button onclick="location.href='inicial.html'" id="btnVoltar" class="formulario-botao">Voltar</button>    
+            <button onclick="location.href='telaCadastroSucesso.html'" id="btnSalvar" class="formulario-botao">Salvar</button>    
             
         </form>
-        <hr>
     </body>
 </html>

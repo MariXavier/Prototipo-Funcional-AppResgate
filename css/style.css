@@ -8,12 +8,18 @@ html, body { height: 100%; }
 
 body
 {
+    background-color: #1c1c1c;
+}
+
+.body-login
+{
     background-image: url('../Imagens/CIDADE.png'); 
     background-size: cover;
     background-attachment: fixed;
     min-height: 100%;
     width: 100%; 
     display: flex;
+    font-family: Century Gothic;
 }
 
 .painel-central
@@ -45,6 +51,7 @@ body
     left: 0;
     border-bottom: 1px solid;
     margin-top: 30px;
+    color: #ff9f00;
 }
 
 .componente
@@ -64,6 +71,8 @@ body
 {
     padding: 5px; 
     font-size: 14px; 
+    border-radius: 3px;
+    border-style: none;
 }
 
 .formulario-botao
@@ -79,3 +88,76 @@ body
     margin-top: 20px;
 }
 
+footer
+{
+    color:#ff9f00; 
+    position: fixed; 
+    bottom: 0; 
+    border-top: 2px solid #ff9f00; 
+    width: 100%;
+}
+
+/* -----------------------------------
+Menu Inicial
+----------------------------------- */
+
+.titulo-inicial
+{
+    color:#ff9f00; 
+    border-bottom: 3px solid #ff9f00; 
+    width:960px; 
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -----------------------------------
+Triagem
+----------------------------------- */
+.componente-radio
+{
+    margin-bottom: 20px;
+}
+
+.componente-radio > label
+{
+    display: flex;
+    margin-bottom: 1px;
+}
+
+.body-central
+{
+    display: flex;
+    font-family: Century Gothic;
+}
+
+.main-central
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.formulario-triagem
+{
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ffe7ba;
+    box-shadow: 7px 7px 5px black;  
+}
+
+/* -----------------------------------
+Cadastro usuário
+----------------------------------- */
+
+.info-cadastro-container
+{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*style="display: flex; border-radius: 5px; margin:20px; flex-direction:column; color:#130567; border-color: #13056712; box-shadow: 2px 6px 10px #6f90acf0; padding: 10px 20px 15px 20px;"*/

@@ -3,21 +3,15 @@
     <head>
         <title>Painel de controle</title>
         <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
-    <body style="background-color:#a0c7e8c7">
+    <body>
         <header style="text-align: right;">
             Usuário logado: Mari
             <a href="index.html">Sair</a>
         </header>
-        <main style="color:#130567;">
-            <h2 style="color:#130567; border-bottom: 3px solid #130567; width:960px; text-align: center; margin-left: auto;margin-right: auto;">Menu inicial</h2>
-            <!-- <ul>
-                <li><a href="cadastro-usuario.html">Cadastrar um usuário</a></li>
-                <li><a href="ajuda.html">Solicitar ajuda</a></li>
-                <li><a href="aprovar-usuario.html">Aprovar novo usuário</a></li>
-                <li><a href="ser-voluntario.html">Quero ser voluntário</a></li>
-                <li><a href="ocorrencias.html">Ocorrências</a></li>
-            </ul> -->
+        <main>
+            <h2 class="titulo-inicial">Menu inicial</h2>
             <div style="display: flex; justify-content: space-around;">
                 <button onclick="location.href='cadastro-usuario.html'" id="btnCadastrarUsuario" style="background-color:#a0c7e8c7 ; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #130567; color:white; height: 120px; width: 120px; border-radius: 10px">
                     <div>
@@ -27,7 +21,7 @@
                         <label>Cadastrar um usuário</label>
                     </div>
                 </button>  
-                <button onclick="location.href='ajuda.html'" id="btnSolicitarAjuda" style="background-color:#a0c7e8c7 ; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #130567; color:white; height: 120px; width: 120px; border-radius: 10px">
+                <button onclick="location.href='triagem.html'" id="btnSolicitarAjuda" style="background-color:#a0c7e8c7 ; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #130567; color:white; height: 120px; width: 120px; border-radius: 10px">
                     <div>
                         <img src="Imagens/alarme.png">
                     </div>
@@ -62,7 +56,7 @@
             </div>
             
         </main>
-        <footer style="color:#130567; position: fixed; bottom: 0; border-top: 2px solid #130567; width: 100%;">
+        <footer>
             <em>&copy; 2019 - Mari Sistemas</em>
         </footer>
     </body>
