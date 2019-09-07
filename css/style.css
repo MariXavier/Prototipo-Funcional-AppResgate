@@ -1,0 +1,81 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+html, body { height: 100%; }
+
+body
+{
+    background-image: url('../Imagens/CIDADE.png'); 
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    width: 100%; 
+    display: flex;
+}
+
+.painel-central
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario
+{
+    color: #ff9f00;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    background-color: #1c1c1c;
+    box-shadow: 7px 7px 5px black;  
+    position: relative;
+
+}
+
+.linha-laranja
+{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid;
+    margin-top: 30px;
+}
+
+.componente
+{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-label
+{
+    font-weight: bold; 
+    width: 100px; 
+}
+
+.formulario-input
+{
+    padding: 5px; 
+    font-size: 14px; 
+}
+
+.formulario-botao
+{
+    font-weight: bold; 
+    width: 100%; 
+    padding: 10px; 
+    font-size: 14px; 
+    border-style: none;
+    background-color: #ff7100;
+    color:white; 
+    border-radius: 5px;
+    margin-top: 20px;
+}
+

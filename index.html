@@ -3,79 +3,21 @@
 <html>
     <head>
         <title>Login</title>
-        <style>
-            * 
-            {
-                margin: 0;
-                padding: 0;
-            }
-
-            body
-            {
-                background-image: url('Imagens/cidade-2.jpg'); 
-                background-size: cover;
-                height: 100%;
-                width: 100%; 
-            }
-
-            .formulario
-            {
-                color:#130567; 
-                border: 3px double #130567; 
-                width:300px; 
-                margin-left: auto;
-                margin-right: auto; 
-                padding: 50px;
-                background-color: wheat;
-                text-align: center;
-            }
-
-            .formulario-label
-            {
-                font-weight: bold; 
-                display: inline-block; 
-                width: 100px; 
-            }
-
-            .formulario-input
-            {
-                padding: 5px; 
-                font-size: 14px; 
-                display: inline-block;
-            }
-
-            .formulario-botao
-            {
-                font-weight: bold; 
-                width: 50%; 
-                padding: 10px; 
-                font-size: 14px; 
-                border: 2px solid #a0c7e8c7; 
-                background-color:#130567; 
-                color:white; 
-                margin-left: auto;
-                margin-right: auto; 
-            }
-
-            .painel-central
-            {
-                margin: 100px auto;
-            }
-
-        </style>
+        <link href="css/style.css" rel="stylesheet"/>
         <meta charset="utf-8">
     </head>
     <body>
-        <div class='painel-central'>
+        <div class="painel-central">
             <form name="form_login" action="inicial.html" method="post" class="formulario">
-            <label for="usuario" class="formulario-label" title="Label do usuário">Usuário:</label>           
-            <input name="usuario" class="formulario-input" id="usuario" maxlength="50" size="15" placeholder="Nome de usuário ou e-mail" >  
-            <br><br>
-            
-            <label for="senha" class="formulario-label">Senha:</label>      
-            <input name="senha" id="senha" type="password" maxlength="10" size="15" class="formulario-input">    
-            <br><br>
-            
+            <div class="linha-laranja"></div>
+            <div class="componente">
+                <label for="usuario" class="formulario-label" title="Label do usuário">Usuário:</label>           
+                <input name="usuario" class="formulario-input" id="usuario" maxlength="50" size="15" placeholder="Nome de usuário ou e-mail" >                  
+            </div>
+            <div class="componente">
+                <label for="senha" class="formulario-label">Senha:</label>      
+                <input name="senha" id="senha" type="password" maxlength="10" size="15" class="formulario-input">    
+            </div>
             <button class="formulario-botao">Entrar</button>
             </form>
         </div>
