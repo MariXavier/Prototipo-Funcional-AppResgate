@@ -13,7 +13,7 @@ body
 
 .body-login
 {
-    background-image: url('../Imagens/CIDADE.png'); 
+    background-image: url('../Imagens/tela-login.jpg'); /*Imagem de <a href="https://pixabay.com/pt/users/aitoff-388338/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2296199">Andrew Martin</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2296199">Pixabay</a>*/
     background-size: cover;
     background-attachment: fixed;
     min-height: 100%;
@@ -72,7 +72,8 @@ body
     padding: 5px; 
     font-size: 14px; 
     border-radius: 3px;
-    border-style: none;
+    /* border-style: none; */
+    border: 1px solid #0000007d;
 }
 
 .formulario-botao
@@ -109,6 +110,32 @@ Menu Inicial
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
+}
+
+.menu-botao-container
+{
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.botao-menu
+{
+    background-color:#1c1c1c; 
+    margin: 10px 0 10px 0; 
+    font-weight: bold;  
+    padding: 10px; 
+    font-size: 14px; 
+    border: 2px solid #ff7100; 
+    color:white;
+    height: 120px;
+    width: 120px; 
+    border-radius: 10px
+}
+
+.botao-menu:hover
+{
+    background-color:#ff9f00; 
 }
 
 /* -----------------------------------
@@ -153,11 +180,53 @@ Triagem
 Cadastro usuário
 ----------------------------------- */
 
-.info-cadastro-container
+/* .info-cadastro-container
 {
     background-color: white;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
+} */
+
+.formulario-base
+{
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
 }
+
+.formulario-header
+{
+    background-color: #ff7100;
+    color: white;
+    font-weight: bold;
+    padding: 3px 0px 3px 6px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.formulario-body
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.botao-container
+{
+    display: flex;
+    margin: 10px;
+}
+
+.botao-container > button:first-child
+{
+    margin-right: 20px;
+}
+
 /*style="display: flex; border-radius: 5px; margin:20px; flex-direction:column; color:#130567; border-color: #13056712; box-shadow: 2px 6px 10px #6f90acf0; padding: 10px 20px 15px 20px;"*/
+
+
+/* -----------------------------------
+Cadastro usuário
+----------------------------------- */
