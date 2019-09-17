@@ -9,6 +9,7 @@ html, body { height: 100%; }
 body
 {
     background-color: #1c1c1c;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
 .body-login
@@ -21,6 +22,17 @@ body
     display: flex;
     font-family: Century Gothic;
 }
+
+.logout-base
+{
+    text-align: right; 
+    color:#ff9f00;
+}
+
+/* main
+{
+    height: 100%;
+} */
 
 .painel-central
 {
@@ -39,7 +51,6 @@ body
     background-color: #1c1c1c;
     box-shadow: 7px 7px 5px black;  
     position: relative;
-
 }
 
 .linha-laranja
@@ -92,10 +103,17 @@ body
 footer
 {
     color:#ff9f00; 
-    position: fixed; 
-    bottom: 0; 
+    /* position: fixed; 
+    bottom: 0;  */
     border-top: 2px solid #ff9f00; 
     width: 100%;
+    margin-top: 15px;
+}
+
+.footer-fixo
+{
+    position: fixed; 
+    bottom: 0; 
 }
 
 /* -----------------------------------
@@ -195,6 +213,7 @@ Cadastro usuário
     border-radius: 5px;
 }
 
+
 .formulario-header
 {
     background-color: #ff7100;
@@ -213,6 +232,8 @@ Cadastro usuário
     padding-top: 10px;
 }
 
+
+
 .botao-container
 {
     display: flex;
@@ -228,5 +249,57 @@ Cadastro usuário
 
 
 /* -----------------------------------
-Cadastro usuário
+aprovar usuario
 ----------------------------------- */
+
+.aprovar-base
+{
+    display: flex;
+    margin-left: 30px;
+}
+
+.aprovar-card
+{
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    width: 680px;
+}
+
+.aprovar-header
+{
+    background-color: #ff7100;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 7px;
+}
+
+.aprovar-body
+{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+}
+
+.aprovar-texto
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+}
+
+.aprovar-foto
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aprovar-foto img
+{
+    max-width: 80px;
+    max-height: 80px;
+    padding: 5px;
+}

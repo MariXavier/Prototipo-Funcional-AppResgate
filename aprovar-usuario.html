@@ -1,64 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <head style="color:#130567;">
+    <head>
         <title>Aprovar usuário</title>
         <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
-    <body style="background-color:#a0c7e8c7">
-        <header style="color:#130567;">
+    <body>
+        <header class="logout-base">
             <label>Usuário logado:</label>
             <label style="font-weight: bold">Mari</label>
-            <a href="inicial.html" style="text-decoration:none; margin: 10px 0 0 0; display: flex;"><img src="Imagens/voltar.png" style="margin-right: 5px;">Voltar</a>
+            <a href="inicial.html"><img src="Imagens/voltar.png">Voltar</a>
         </header>
-        <main style="color:#130567;">
-            <h1>Aprovar usuário</h1>
+        <main>
+            <h2 class="titulo-inicial">Aprovar usuário</h2>
             <form action="salvar-aprovados.html" method="POST">
-                <div class="aprovar-base" style="display: flex; flex-direction: column">
-                    <div class="usuario-base" style="display: flex; margin: 10px 0;">
-                        <div class="usuario-texto" style="margin:10px">
-                            <input type="checkbox">
-                            <label>Mari</label>
-                            <label>(11)1111-1111</label>
-                        </div>
-                        <div class="usuario-imagem">
-                            <img src="Imagens/facebook.png">
-                        </div>
-                    </div>
-                    <div class="usuario-base" style="display: flex; margin: 10px 0;">
-                            <div class="usuario-texto" style="margin:10px">
-                                <input type="checkbox">
-                                <label>José</label>
-                                <label>(22)2222-2222</label>
+                <div class="aprovar-base">
+                    <div class="aprovar-card">
+                        <div class="aprovar-header"></div>
+                        <div class="aprovar-body">
+                            <div class="aprovar-texto">
+                                <label>Maria K. Orr, 32 anos</label>    
+                                <label>Rua Agripiano Barros, 1628 - São Paulo-SP</label>    
+                                <label>(11) 6449-7136</label>    
                             </div>
-                            <div class="usuario-imagem">
-                                <img src="Imagens/instagram.png">
+                            <div class="aprovar-foto">
+                                <img src="Imagens/usuario.png">
                             </div>
                         </div>
                     </div>
-                    <div class="usuario-base" style="display: flex; margin: 10px 0;">
-                            <div class="usuario-texto" style="margin:10px">
-                                <input type="checkbox">
-                                <label>Bob</label>
-                                <label>(33)3333-3333</label>
-                            </div>
-                            <div class="usuario-imagem">
-                                <img src="Imagens/linkedin.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="usuario-base" style="display: flex; margin: 10px 0;">
-                            <div class="usuario-texto" style="margin:10px">
-                                <input type="checkbox">
-                                <label>Júnior</label>
-                                <label>(44)4444-4444</label>
-                            </div>
-                            <div class="usuario-imagem">
-                                <img src="Imagens/facebook.png">
-                            </div>
-                        </div>
-                    </div>
+                    <input type="checkbox">
                 </div>
 
+                <div class="aprovar-base">
+                    <div class="aprovar-card">
+                        <div class="aprovar-header"></div>
+                        <div class="aprovar-body">
+                            <div class="aprovar-texto">
+                                <label>Maria K. Orr, 32 anos</label>    
+                                <label>Rua Agripiano Barros, 1628 - São Paulo-SP</label>    
+                                <label>(11) 6449-7136</label>    
+                            </div>
+                            <div class="aprovar-foto">
+                                <img src="Imagens/usuario.png">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox">
+                </div>
+
+                <div class="aprovar-base">
+                    <div class="aprovar-card">
+                        <div class="aprovar-header"></div>
+                        <div class="aprovar-body">
+                            <div class="aprovar-texto">
+                                <label>Maria K. Orr, 32 anos</label>    
+                                <label>Rua Agripiano Barros, 1628 - São Paulo-SP</label>    
+                                <label>(11) 6449-7136</label>    
+                            </div>
+                            <div class="aprovar-foto">
+                                <img src="Imagens/usuario.png">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox">
+                </div>
+
+                <div class="aprovar-base">
+                    <div class="aprovar-card">
+                        <div class="aprovar-header"></div>
+                        <div class="aprovar-body">
+                            <div class="aprovar-texto">
+                                <label>Maria K. Orr, 32 anos</label>    
+                                <label>Rua Agripiano Barros, 1628 - São Paulo-SP</label>    
+                                <label>(11) 6449-7136</label>    
+                            </div>
+                            <div class="aprovar-foto">
+                                <img src="Imagens/usuario.png">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox">
+                </div>
+                
+                <div class="aprovar-base">
+                    <div class="aprovar-card">
+                        <div class="aprovar-header"></div>
+                        <div class="aprovar-body">
+                            <div class="aprovar-texto">
+                                <label>Maria K. Orr, 32 anos</label>    
+                                <label>Rua Agripiano Barros, 1628 - São Paulo-SP</label>    
+                                <label>(11) 6449-7136</label>    
+                            </div>
+                            <div class="aprovar-foto">
+                                <img src="Imagens/usuario.png">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="checkbox">
+                </div>
+                
                 <!-- <table>
                     <tr>
                         <td><input type="checkbox"></td>
@@ -85,10 +125,10 @@
                         <td><img src="Imagens/facebook.png"></td>
                     </tr>
                 </table> -->
-                <button style="background-color:#130567; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #a0c7e8c7; color:white;">Aprovar novos usuários</button>
+                <button class="formulario-botao">Aprovar novos usuários</button>
             </form>
         </main>
-        <footer style="color:#130567; ">
+        <footer>
             <em>&copy; 2019 - Mari Sistemas</em>
         </footer>
     </body>

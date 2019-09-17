@@ -3,35 +3,48 @@
     <head>
         <title>Ser Voluntário</title>
         <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
-    <body style="background-color:#a0c7e8c7">
-        <header style="text-align: right;">
+    <body>
+        <header style="text-align: right; color:#ff9f00">
             Usuário logado: Mari
             <a href="inicial.html">Sair</a>
         </header>
-        <main style="color:#130567;">
-            <h1 style="color:#130567; border-bottom: 3px solid #130567; width:960px; text-align: center; margin-left: auto;margin-right: auto;">Ser voluntário</h1>
+        <main>
+            <h1 class="titulo-inicial">Ser voluntário</h1>
             <form action="cadastrar-voluntario.html">
-                <div style="display: flex; flex-direction: column;">
-                    <label for="nome">Nome:</label>
-                    <input name="name" id="name" required style="margin-bottom: 5px;"> 
-    
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" style="margin-bottom: 5px;">         
-    
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" style="margin-bottom: 5px;">     
-    
-                    <label for="for">Foto:</label>
-                    <input type="file" name="foto" id="foto">    
+                <div class="formulario-base">
+                    <div class="formulario-header"> 
+                        <label>Informações pessoais</label>
+                    </div>
+                    <div class="formulario-body">
+                        <div class="componente">
+                            <label for="nome">Nome:</label>
+                            <input class="formulario-input"  name="nome" id="nome" required>
+                        </div>
+                        <div class="componente">
+                            <label for="email">E-mail:</label>
+                            <input class="formulario-input"  name="email" id="email" type="email">
+                        </div>
+                        <div class="componente">
+                            <label for="telefone">Telefone:</label>
+                            <input class="formulario-input" name="telefone" id="telefone">
+                        </div>
+                        <div class="componente">
+                            <label for="telefone">Foto:</label>
+                            <input  class="formulario-input" type="file" name="foto" id="foto">   
+                        </div>
+                    </div>
                 </div>
-                
-
-                <button onclick="location.href='telaCadastroSucesso.html'" id="btnSalvar" style="background-color:#130567; margin: 10px 0 10px 0; font-weight: bold;  padding: 10px; font-size: 14px; border: 2px solid #a0c7e8c7; color:white;">Salvar</button>    
+                <div class="botao-container">
+                    <button onclick="location.href='inicial.html'" id="btnVoltar" class="formulario-botao">Voltar</button>    
+                    <button onclick="location.href='telaCadastroSucesso.html'" id="btnSalvar" class="formulario-botao">Salvar</button>   
+                </div>
+                 
 
             </form>
         </main>
-        <footer style="color:#130567; position: fixed; bottom: 0; border-top: 2px solid #130567; width: 100%;">
+        <footer class="footer-fixo">
             <em>&copy; 2019 - Mari Sistemas</em>
         </footer>
     </body>
