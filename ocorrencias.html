@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title style="color:#130567;">Ocorrências</title>
+        <title>Ocorrências</title>
         <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
-    <body style="background-color:#a0c7e8c7">
-        <header style="color:#130567;">
-            <label>Usuário logado:</label>
-            <label style="font-weight: bold">Mari</label>
-            <a href="inicial.html" style="text-decoration:none; margin: 10px 0 0 0; display: flex;"><img src="Imagens/voltar.png" style="margin-right: 5px;">Voltar</a>
+    <body>
+        <header class="logout-base">
+            <div>
+                <div>
+                    <label style="font-weight: bold">Mari</label>
+                </div>
+                <div>
+                    <a href="inicial.html"><img src="Imagens/voltar.png">Voltar</a>  
+                </div>
+            </div>
         </header>
         <main>
-            <h1 style="color:#130567;">Ocorrências</h1>
+            <h2 class="titulo-inicial">Ocorrências em andamento</h2>
+            <div class="aprovar-base">
+                <div class="aprovar-card">
+                    <div class="aprovar-header"></div>
+                    <div class="aprovar-body">
+                        <div class="aprovar-texto">  
+                            <label>Rua Agripiano Barros, 1628 - São Paulo-SP</label>    
+                            <label>Engasgamento</label>  
+                            <label>Solicitado às 17h40</label> 
+                        </div>
+                        <div class="aprovar-foto">
+                            <button>Aceitar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer style="color:#130567; position: fixed; bottom: 0; border-top: 2px solid #130567; width: 100%;">
-            <em style="color:#130567;">&copy; 2019 - Mari Sistemas</em>
+        <footer>
+            <em>&copy; 2019 - Mari Sistemas</em>
         </footer>
     </body>
 </html>
