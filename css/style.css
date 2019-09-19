@@ -256,6 +256,7 @@ aprovar usuario
 {
     display: flex;
     margin-left: 30px;
+    align-items: center;
 }
 
 .aprovar-card
@@ -302,4 +303,20 @@ aprovar usuario
     max-width: 80px;
     max-height: 80px;
     padding: 5px;
+}
+
+/* -----------------------------------
+aprovar usuario
+----------------------------------- */
+
+section.imagem-sobre
+{
+    background-image: url('../Imagens/tela-login.jpg'); /*Imagem de <a href="https://pixabay.com/pt/users/aitoff-388338/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2296199">Andrew Martin</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2296199">Pixabay</a>*/
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    text-align: center; 
+    position: relative;
+    width: 100%;
+    padding: 140px 0 200px 0;
 }
