@@ -4,17 +4,22 @@
     padding: 0;
 }
 
-html, body { height: 100%; }
+html, body 
+{ min-height: 100%; }
 
 body
 {
     background-color: #1c1c1c;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    background-image: linear-gradient(to top, rgba(106, 46, 0, 0.32), rgb(0, 0, 0));
+    
 }
 
 .body-login
 {
     background-image: url('../Imagens/tela-login.jpg'); /*Imagem de <a href="https://pixabay.com/pt/users/aitoff-388338/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2296199">Andrew Martin</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2296199">Pixabay</a>*/
+    /* background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg'); */
+    
     background-size: cover;
     background-attachment: fixed;
     min-height: 100%;
@@ -38,7 +43,14 @@ body
 {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .formulario
@@ -169,7 +181,8 @@ Menu Inicial
     color:white;
     height: 120px;
     width: 120px; 
-    border-radius: 10px
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, rgba(157, 68, 0, 0.71), rgb(0, 0, 0));
 }
 
 .botao-menu:hover
