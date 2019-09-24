@@ -10,7 +10,7 @@ html, body
 body
 {
     background-color: #1c1c1c;
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic;
     background-image: linear-gradient(to top, rgba(106, 46, 0, 0.32), rgb(0, 0, 0));
     
 }
@@ -157,7 +157,7 @@ Menu Inicial
 {
     color:#ff9f00; 
     border-bottom: 3px solid #ff9f00; 
-    width:960px; 
+    width:90% ; 
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
@@ -338,8 +338,25 @@ aprovar usuario
 }
 
 /* -----------------------------------
-aprovar usuario
+sobre
 ----------------------------------- */
+
+.nav-menu
+{
+    background-image: linear-gradient(to top, #130c07 , #50270fcc);
+    justify-content: center;
+    display: flex;
+
+}
+
+.barra-menu-container
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 3px 0 3px 0;
+    width: 90%;
+}
 
 section.imagem-sobre
 {
@@ -351,7 +368,6 @@ section.imagem-sobre
     position: relative;
     width: 100%;
     padding: 100px 0 150px 0;
-    margin-top: 15px;
 }
 
 .container
@@ -478,3 +494,35 @@ cadastro sucesso
     border-radius: 5px;
     margin-top: 20px;
 }
+
+/* -----------------------------------
+Mobile
+----------------------------------- */
+
+@media screen and (max-width: 700px) 
+{
+    .info-container
+    {
+      flex-direction: column;
+    }
+
+    .info-container > div
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .equipe-container 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao-equipe
+    {
+        text-align: center;
+    }
+  }
+
+  /*background-image: linear-gradient(to top, #130c07 , #50270fcc);*/
