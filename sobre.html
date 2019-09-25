@@ -4,6 +4,8 @@
         <title>Sobre</title>
         <meta charset="utf-8">
         <link href="css/style.css" rel="stylesheet"/>
+        <link href="fontawesome/css/all.css" rel="stylesheet"/>
+        <script defer src="fontawesome/js/all.js"></script>
     </head>
     <body>
         <header class="logout-base">
@@ -17,13 +19,13 @@
             </div> -->
             <nav class="nav-menu">
                 <div class="barra-menu-container">
-                    <div>Menu</div>
-                    <div>Solicitar ajuda</div>
-                    <div>Ser voluntário</div>
-                    <div>Ocorrências</div>
-                    <div>Aprovar usuário</div>
-                    <div>Sobre</div>
-                    <div>Mari</div>
+                    <div onclick="location.href='inicial.html'">Menu</div>
+                    <div onclick="location.href='triagem.html'">Solicitar ajuda</div>
+                    <div onclick="location.href='ser-voluntario.html'">Ser voluntário</div>
+                    <div onclick="location.href='ocorrencias.html'" >Ocorrências</div>
+                    <div onclick="location.href='aprovar-usuario.html'">Aprovar usuário</div>
+                    <div onclick="location.href='sobre.html'" id="btSobre">Sobre</div>
+                    <div><i class="fas fa-user-circle" style="margin-right: 5px"></i><i class="fas fa-caret-down"></i></div>
                 </div>
             </nav>
         </header>
@@ -45,10 +47,14 @@
                 <div class="botoes-informacao-container">
                     <div class="info-container">
                         <div>
-                            <img src="Imagens/adicionar-usuario.png">
+                            <img src="Imagens/ligacao-de-emergencia.png">
+                            <p>
+                                    Esse é o ícone de ocorrências. Aqui você será capaz de visualizar todas as ocorrências em andamento e aceitar/recusar os chamados. 
+                            </p>
+                            <!-- <img src="Imagens/adicionar-usuario.png">
                             <p>
                                 Esse é o ícone de cadastro de usuário. Ele é responsável pelo primeiro cadastro aqui no nosso sistema. É através dele que você poderá ter um acesso completo ao site.
-                            </p>
+                            </p> -->
                         </div>
                         <div >
                             <img src="Imagens/alarme.png">
@@ -71,14 +77,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="info-container">
+                    <!-- <div class="info-container">
                         <div>
                             <img src="Imagens/ligacao-de-emergencia.png">
                             <p>
                                     Esse é o ícone de ocorrências. Aqui você será capaz de visualizar todas as ocorrências em andamento e aceitar/recusar os chamados. 
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <section class="secao-container">

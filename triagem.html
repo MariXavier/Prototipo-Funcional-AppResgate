@@ -5,10 +5,25 @@
         <meta charset='utf-8'>
         <title>Triagem</title>
         <link href="css/style.css" rel="stylesheet"/>
+        <link href="fontawesome/css/all.css" rel="stylesheet"/>
+        <script defer src="fontawesome/js/all.js"></script>
     </head>
-    <body class="painel-central">
+    <body class="painel-central coluna-content">
+        <header class="logout-base">
+            <nav class="nav-menu">
+                <div class="barra-menu-container">
+                    <div onclick="location.href='inicial.html'">Menu</div>
+                    <div onclick="location.href='triagem.html'">Solicitar ajuda</div>
+                    <div onclick="location.href='ser-voluntario.html'">Ser voluntário</div>
+                    <div onclick="location.href='ocorrencias.html'">Ocorrências</div>
+                    <div onclick="location.href='aprovar-usuario.html'">Aprovar usuário</div>
+                    <div onclick="location.href='sobre.html'">Sobre</div>
+                    <div><i class="fas fa-user-circle" style="margin-right: 5px"></i><i class="fas fa-caret-down"></i></div>
+                </div>
+            </nav>
+        </header>
         <main class="main-central">
-            <form action="iniciar-ocorrencia.html" method="POST" class="formulario-triagem">
+            <form action="iniciar-ocorrencia.html" method="POST" class="formulario-triagem formulario-central">
             <div class="linha-laranja"></div>
                 <div class="componente-radio">
                     <label>A vítima está acordada?</label>                                 

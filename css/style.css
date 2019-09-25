@@ -32,6 +32,7 @@ body
 {
     text-align: right; 
     color:#ff9f00;
+    margin-bottom: 25px;
 }
 
 /* main
@@ -212,10 +213,17 @@ Triagem
 
 .main-central
 {
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; 
+    align-items: center;*/
     display: flex;
-    align-items: center;
+    justify-content: center;
+    
+}
+
+.painel-central.coluna-content
+{
+    display: unset;
 }
 
 .formulario-triagem
@@ -225,6 +233,12 @@ Triagem
     position: relative;
     background-color: #ffe7ba;
     box-shadow: 7px 7px 5px black;  
+}
+
+.formulario-triagem.formulario-central
+{
+    position: absolute;
+    top: 20%;
 }
 
 /* -----------------------------------
@@ -282,6 +296,12 @@ Cadastro usuário
 /* -----------------------------------
 aprovar usuario
 ----------------------------------- */
+
+.aprovar-content
+{
+    overflow-y: auto;
+    max-height: calc(78vh - 18px);
+}
 
 .aprovar-base
 {
@@ -346,7 +366,6 @@ sobre
     background-image: linear-gradient(to top, #130c07 , #50270fcc);
     justify-content: center;
     display: flex;
-
 }
 
 .barra-menu-container
@@ -356,6 +375,36 @@ sobre
     justify-content: space-around;
     padding: 3px 0 3px 0;
     width: 90%;
+}
+.barra-menu-container > div
+{
+    padding: 3px;
+    text-align: center;
+    width: 100%;
+}
+
+.barra-menu-container > div:hover
+{
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid #ffffff38;
+    background-color: #ffffff08;
+    padding: 2px;
+
+}
+
+.barra-menu-container > div:active,
+.botao-menu-selecionado
+{
+    background-color: #ff9f00;
+    color: white;
+    border-radius: 15px;
+}
+
+..botao-menu-selecionado
+{
+    background-color: #ff9f00;
 }
 
 section.imagem-sobre
@@ -471,6 +520,16 @@ cadastro sucesso
 .cadastro-sucesso-box
 {
     background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 300px;
+    max-height: 100px;
+
     /* padding: 50px;
     border-radius: 5px;
     position: relative;

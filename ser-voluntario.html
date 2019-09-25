@@ -4,11 +4,22 @@
         <title>Ser Voluntário</title>
         <meta charset="utf-8">
         <link href="css/style.css" rel="stylesheet"/>
+        <link href="fontawesome/css/all.css" rel="stylesheet"/>
+        <script defer src="fontawesome/js/all.js"></script>
     </head>
     <body>
-        <header style="text-align: right; color:#ff9f00">
-            Usuário logado: Mari
-            <a href="inicial.html">Sair</a>
+        <header class="logout-base">
+            <nav class="nav-menu">
+                <div class="barra-menu-container">
+                    <div onclick="location.href='inicial.html'">Menu</div>
+                    <div onclick="location.href='triagem.html'">Solicitar ajuda</div>
+                    <div onclick="location.href='ser-voluntario.html'">Ser voluntário</div>
+                    <div onclick="location.href='ocorrencias.html'">Ocorrências</div>
+                    <div onclick="location.href='aprovar-usuario.html'">Aprovar usuário</div>
+                    <div onclick="location.href='sobre.html'">Sobre</div>
+                    <div><i class="fas fa-user-circle" style="margin-right: 5px"></i><i class="fas fa-caret-down"></i></div>
+                </div>
+            </nav>
         </header>
         <main>
             <h1 class="titulo-inicial">Ser voluntário</h1>
